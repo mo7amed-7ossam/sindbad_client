@@ -38,17 +38,8 @@ summary:focus-visible, [tabindex]:focus-visible { outline-color: var(--oman-red)
 }
 .announcement > span { gap: 13px; }
 .announcement-divider { opacity: .55; }
-.national-colors { direction: ltr; gap: 0 !important; width: 30px; height: 14px; }
-.announcement .national-colors i {
-  display: block;
-  border-radius: 0;
-  height: 14px;
-  width: 10px;
-  margin: 0;
-  background: #fff;
-}
-.announcement .national-colors i:first-child { background: #174b3c; }
-.announcement .national-colors i:last-child { background: #e6a9a6; }
+.oman-flag { display: block; width: 36px; height: auto; aspect-ratio: 2000 / 1143; object-fit: contain; transform: none; flex-shrink: 0; }
+.announcement .oman-flag { width: 32px; }
 .header { background: #fffcf7; border-bottom-color: #e6e1d8; }
 .header .logo { position: relative; }
 .header .logo::after {
@@ -57,7 +48,7 @@ summary:focus-visible, [tabindex]:focus-visible { outline-color: var(--oman-red)
   bottom: -7px;
   inset-inline: 18%;
   height: 2px;
-  background: linear-gradient(90deg, var(--oman-green) 0 33%, #d6cbb5 33% 66%, var(--oman-red) 66%);
+  background: var(--oman-green);
 }
 .desktop-nav a:hover { color: var(--oman-red); }
 .mobile-menu { background: #fffcf7; }
@@ -94,7 +85,7 @@ summary:focus-visible, [tabindex]:focus-visible { outline-color: var(--oman-red)
   inset-block: 0;
   inset-inline-end: 0;
   width: 5px;
-  background: linear-gradient(to bottom, var(--oman-red) 0 34%, #f6f0e5 34% 67%, var(--oman-green-light) 67%);
+  background: var(--oman-red);
 }
 .hero-copy .eyebrow { color: #e6d2ac; font-size: 10px; gap: 12px; margin-bottom: 17px; }
 .tiny-line { background: var(--oman-gold); width: 24px; height: 1px; }
@@ -122,8 +113,8 @@ summary:focus-visible, [tabindex]:focus-visible { outline-color: var(--oman-red)
   z-index: 2;
   top: 85px;
   left: 32px;
-  width: 133px;
-  height: 158px;
+  width: 145px;
+  height: 202px;
   border: 1px solid #e6d7b5a3;
   border-radius: 75px 75px 0 0;
   background: #f7f1e9ed;
@@ -132,11 +123,14 @@ summary:focus-visible, [tabindex]:focus-visible { outline-color: var(--oman-red)
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5px;
+  padding: 23px 10px 14px;
   box-shadow: 0 8px 30px #00000012;
 }
-.national-seal > span { font-size: 10px; margin-top: 13px; }
-.national-seal strong { font-family: var(--display-font); font-size: 48px; font-weight: 600; line-height: 1.4; }
-.national-seal small { font-size: 6px; letter-spacing: .9px; padding-top: 8px; border-top: 1px solid #153f3533; }
+.national-seal .oman-flag { width: 54px; }
+.national-seal .seal-title { font-size: 9px; margin: 0; }
+.national-seal .national-number { font-family: var(--font); font-size: 62px; font-weight: 400; line-height: 1.1; }
+.national-seal small { font-size: 7px; letter-spacing: 1.7px; padding-top: 8px; border-top: 1px solid #153f3533; }
 .hero-image .circle { border-color: #e8d9bb8f; }
 
 .trust-strip { padding-block: 31px; }
@@ -218,9 +212,10 @@ summary:focus-visible, [tabindex]:focus-visible { outline-color: var(--oman-red)
   .hero-copy { padding-top: 40px; }
   .hero h1 { font-size: 77px; }
   .hero-copy .eyebrow { font-size: 9px; gap: 8px; }
-  .national-seal { width: 109px; height: 136px; left: 24px; }
-  .national-seal strong { font-size: 43px; }
-  .national-seal small { font-size: 5px; }
+  .national-seal { width: 122px; height: 181px; left: 24px; }
+  .national-seal .national-number { font-size: 53px; }
+  .national-seal .oman-flag { width: 48px; }
+  .national-seal small { font-size: 6px; }
   .national-tribute { padding-inline: 30px; }
 }
 @media (max-width: 850px) {
@@ -241,22 +236,22 @@ summary:focus-visible, [tabindex]:focus-visible { outline-color: var(--oman-red)
 @media (max-width: 600px) {
   .announcement { padding-block: 11px; font-size: 8px; }
   .announcement > span { gap: 7px; }
-  .announcement .national-colors { width: 21px; height: 12px; }
-  .announcement .national-colors i { width: 7px; height: 12px; }
+  .announcement .oman-flag { width: 28px; }
   .hero { grid-template-columns: 1fr; min-height: 0; }
   .hero-copy { padding: 31px 24px 26px; }
   .hero-copy::before { background-size: auto 170px; background-position: left bottom; opacity: .12; }
-  .hero-copy::after { inset-block: auto 0; inset-inline: 0; height: 4px; width: auto; background: linear-gradient(90deg, var(--oman-green-light) 0 34%, #f6f0e5 34% 67%, var(--oman-red) 67%); }
+  .hero-copy::after { inset-block: auto 0; inset-inline: 0; height: 4px; width: auto; background: var(--oman-red); }
   .hero-copy .eyebrow { font-size: 9px; margin-bottom: 14px; }
   .hero h1 { font-size: clamp(58px, 19vw, 77px); line-height: 1.13; margin-top: 10px; margin-bottom: 21px; }
   .hero-intro { font-size: 11px; max-width: 345px; margin-bottom: 21px; }
   .hero-secondary { position: static; margin-top: 14px; min-height: 30px; font-size: 10px; }
   .hero .button { min-width: 190px; font-size: 11px; min-height: 50px; }
   .hero-image { height: 335px; }
-  .national-seal { top: 55px; left: 22px; width: 99px; height: 123px; }
-  .national-seal > span { font-size: 8px; margin-top: 13px; }
-  .national-seal strong { font-size: 39px; }
-  .national-seal small { font-size: 4.5px; letter-spacing: .7px; padding-top: 7px; }
+  .national-seal { top: 55px; left: 22px; width: 112px; height: 162px; gap: 4px; padding-top: 19px; }
+  .national-seal .seal-title { font-size: 8px; }
+  .national-seal .national-number { font-size: 47px; }
+  .national-seal .oman-flag { width: 43px; }
+  .national-seal small { font-size: 6px; letter-spacing: 1.2px; padding-top: 6px; }
   .image-top > span:first-child { font-size: 8px; }
   .image-top [dir] { display: none; }
   .trust-strip { padding-block: 25px; }

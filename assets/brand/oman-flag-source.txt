@@ -1,0 +1,13 @@
+Oman flag image
+
+Source: Sultanate of Oman, Ministry of Foreign Affairs
+Official description: https://www.fm.gov.om/ar/about-oman/state/flag-emblem-and-national-anthem/
+Official downloads page: https://www.fm.gov.om/ar/ministry/media/downloads/
+Original image: https://www.fm.gov.om/wp-content/uploads/Flag_of_OmanMin-of-Info.jpg
+
+Downloaded unchanged as oman-flag.jpg on 2026-11-09.
+Format: JPEG
+Dimensions: 2000 x 1143 pixels
+SHA-256: 9E86FBFC8F10223E5FFBDFBA5601F3B53B0A80E960EDC341E99768BAECC71574
+
+Display the image without cropping, mirroring, stretching, recoloring, or recreating its national emblem.
