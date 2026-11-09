@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360" fill="none" preserveAspectRatio="xMinYMax meet">
+  <title>Omani mountain and fort landscape</title>
+  <desc>An original decorative landscape of layered mountains, a traditional round fort and a date palm, drawn in ivory and muted gold.</desc>
+  <defs>
+    <linearGradient id="fade" x1="0" y1="180" x2="1120" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0.64" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sunFill" x1="430" y1="54" x2="430" y2="174" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7BA7F" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#D7BA7F" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="landscapeMask"><path fill="url(#fade)" d="M0 0h1400v360H0z"/></mask>
+  </defs>
+  <g mask="url(#landscapeMask)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Quiet sun and high mountain ridges. -->
+    <circle cx="430" cy="112" r="58" fill="url(#sunFill)" stroke="#D7BA7F" stroke-opacity="0.48" stroke-width="1"/>
+    <path d="m-50 251 94-69 61 38 106-117 66 63 52-42 142 143 91-62 100 51 85-100 56 46 70-77 142 150 134-65" stroke="#F4EFE1" stroke-opacity="0.19" stroke-width="1.25"/>
+    <path d="m107 220 35-14 69-103 17 70 49-7m52-42-12 67 49-20m293-15-15 64 40-35m86-60-19 82 58-41" stroke="#D7BA7F" stroke-opacity="0.2" stroke-width="1"/>
+    <path d="m-20 281 100-46 92 51 107-63 104 65 91-49 112 41 97-25 80 29 117-37 110 38 110-20" stroke="#D7BA7F" stroke-opacity="0.35" stroke-width="1"/>
+
+    <!-- Traditional round tower and low courtyard wall. -->
+    <g stroke="#F4EFE1" stroke-opacity="0.72" stroke-width="1.35">
+      <path d="M178 314V191h11v-17h14v17h16v-17h14v17h16v-17h14v17h16v-17h14v17h11v123" fill="#F4EFE1" fill-opacity="0.035"/>
+      <path d="M178 201c38 10 88 10 126 0M178 211c38 10 88 10 126 0" stroke-opacity="0.4"/>
+      <path d="M165 314h151M190 312v-86m102 86v-86" stroke-opacity="0.25"/>
+      <path d="M226 314v-40a15 15 0 0 1 30 0v40"/>
+      <path d="M233 314v-39a8 8 0 0 1 16 0v39M241 274v40" stroke-opacity="0.25"/>
+      <path d="M206 235v-12m35 14v-12m35 10v-12"/>
+      <path d="M304 314v-65h25v-10h14v10h25v-10h14v10h25v-10h14v10h25v-10h14v10h25v-10h14v10h27v65" fill="#F4EFE1" fill-opacity="0.025"/>
+      <path d="M304 260h222" stroke-opacity="0.25"/>
+      <path d="M347 314v-25a11 11 0 0 1 22 0v25m61 0v-25a11 11 0 0 1 22 0v25" stroke-opacity="0.5"/>
+    </g>
+
+    <!-- Date palm: deliberately spare, with room around its silhouette. -->
+    <g stroke="#D7BA7F" stroke-width="1.4" stroke-opacity="0.75">
+      <path d="M594 314c4-29 7-60 5-87m-1 87c5-28 7-59 5-87"/>
+      <path d="M601 228c-19-24-44-28-59-21 25-1 41 9 59 21Z" fill="#D7BA7F" fill-opacity="0.045"/>
+      <path d="M601 228c-17-35-39-44-58-42 25 7 42 19 58 42Z"/>
+      <path d="M601 228c-5-35 3-57 18-70-11 24-17 44-18 70Z"/>
+      <path d="M601 228c17-31 41-44 63-40-27 6-44 19-63 40Z"/>
+      <path d="M601 228c23-18 44-20 59-8-24-4-40 1-59 8Z" fill="#D7BA7F" fill-opacity="0.045"/>
+      <path d="M601 228c-19-9-34-4-42 13 18-12 28-14 42-13Zm0 0c18-7 30 0 35 17-14-13-23-17-35-17Z" stroke-opacity="0.45"/>
+      <path d="m599 269 5-4m-6 17 5-4m-7 18 5-4" stroke-opacity="0.4"/>
+    </g>
+
+    <!-- Low dunes and a fine ground rule make the illustration easy to crop. -->
+    <path d="M-20 316c75-12 132-9 192-2s117 16 197 5 130-9 202-2 132 9 205-5 135-12 225 1" stroke="#F4EFE1" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M-10 332c86-10 129-7 211-1s133 9 214 0 143-7 235-1 153 3 226-6" stroke="#D7BA7F" stroke-opacity="0.16" stroke-width="1"/>
+    <path d="M0 347h1030" stroke="#D7BA7F" stroke-opacity="0.18" stroke-width="1"/>
+  </g>
+</svg>
